@@ -28,15 +28,38 @@
 			    foreach ($meses as $numMes => $nombre_mes) {
 				  echo'<tr>';
 					echo'<td>'.$numMes.'</td>';
-					echo'<td>'.'<b>'.$mes.'</b>'.'</td>';
+					echo'<td>'.'<b>'.$nombre_mes.'</b>'.'</td>';
 				echo '</tr>';
 						}
 		  echo '</table>';
         
         echo '<br>';
 
-      //mostrar el array con un foreach, mostrando los dias del mes
-      $meses[]
+      //mostrar el array con un foreach abreviado
+      echo '<h2>Foreach abreviado</h2>';
+      foreach($meses as $nombre_mes)
+        echo $nombre_mes.'<br>';
+
+      //mostrar los meses con sus respectivos dias con foreach
+      echo '<h2>Dias del mes</h2>';
+
+     $month = array(
+       "Enero" => 31,
+       "Febrero" => 28,
+       "Marzo" => 31,
+       "Abril" => 30,
+       "Mayo" => 31  
+     );
+
+     echo '<table>';
+        foreach ($month as $numMes => $dias){
+          echo '<tr>';
+            echo '<td>'.$numMes.'</td>';
+            echo '<td>'.$dias.'</td>';
+          echo '</tr>';  
+        }
+     echo '</table>';
+
 
 
     /* foreach($meses as $mes) */
