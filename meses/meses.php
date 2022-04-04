@@ -52,7 +52,7 @@
      );
 
      echo '<table>';
-      //mostrar el foreach completo, $dias seria el valor de los elementos del array, $numMes es el indice
+      //mostrar el foreach completo, $dias es el valor de los elementos del array, $numMes es el indice
         foreach ($month as $numMes => $dias){
           echo '<tr>';
             echo '<td>'.$numMes.'</td>';
