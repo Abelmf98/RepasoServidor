@@ -6,13 +6,13 @@
   </head>
   <body>
     <?php
-        //creacion del array
-        $meses = array(
-         "Enero",
-         "Febrero",
-         "Marzo",
-         "Abril",
-         "Mayo");
+      //creacion del array
+      $meses = array(
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo");
 
         echo '<h2>Una prueba con print_r</h2>';
         //mostrar el array con un print
@@ -35,7 +35,7 @@
         
         echo '<br>';
 
-      //mostrar el array con un foreach abreviado
+      //mostrar el array con un foreach abreviado, $nombre_mes es el valor de los elementos del array
       echo '<h2>Foreach abreviado</h2>';
       foreach($meses as $nombre_mes)
         echo $nombre_mes.'<br>';
@@ -52,6 +52,7 @@
      );
 
      echo '<table>';
+      //mostrar el foreach completo, $dias seria el valor de los elementos del array, $numMes es el indice
         foreach ($month as $numMes => $dias){
           echo '<tr>';
             echo '<td>'.$numMes.'</td>';
