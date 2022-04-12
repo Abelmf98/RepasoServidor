@@ -4,6 +4,7 @@
         private $meses;
 
         //ponemos al metodo en privado en este caso para llamar al array.
+        //metodo que se llama con $this
         private function darValores(){
             $this->meses = array(
                 "Enero",

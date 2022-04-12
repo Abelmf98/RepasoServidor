@@ -13,7 +13,14 @@
     //Llamamos al archivo externo con un require
     require('pruebameses.php');
 
+    //Llamamos a la clase del archivo externo, igualandolo a una variable
+    $objMetodo = new pruebameses4();
 
+    //Llamamos a dar valores
+    $objMetodo->darValores();
+
+    //Visualizamos
+    print_r($objMetodo->meses);
     ?>
 </body>
 </html>
