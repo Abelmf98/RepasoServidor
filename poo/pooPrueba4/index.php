@@ -16,11 +16,18 @@
     //Llamamos a la clase del archivo externo, igualandolo a una variable
     $objMetodo = new pruebameses4();
 
-    //Llamamos a dar valores
-    $objMetodo->darValores();
+    //Creamos el array $meses
+    $meses = array(
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo"
+    );
 
-    //Visualizamos
-    print_r($objMetodo->meses);
+    //Llamamos a mostrar pasandole como parametro $meses
+    $objMetodo->mostrar($meses);
+
     ?>
 </body>
 </html>
